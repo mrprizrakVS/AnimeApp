@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="105.5dp"
+        android:id="@+id/imageView1"
+        android:layout_marginRight="46.0dp"
+        android:layout_marginLeft="46.0dp"
+        android:layout_marginBottom="82.5dp" />
+    <TextView
+        android:text="Имя: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119.5dp"
+        android:layout_marginBottom="13.5dp"
+        android:id="@+id/textName" />
+    <TextView
+        android:text="Дата: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textUpdate"
+        android:layout_marginTop="315.5dp" />
+    <TextView
+        android:text="Год: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textYear"
+        android:layout_marginTop="294.0dp" />
+    <TextView
+        android:text="Серии: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSiries"
+        android:layout_marginTop="230.5dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="45px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="337.0dp"
+        android:layout_marginBottom="113.5dp"
+        android:id="@+id/scrollView1">
+        <TextView
+            android:text="Описание: "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textOpis" />
+    </ScrollView>
+</RelativeLayout>

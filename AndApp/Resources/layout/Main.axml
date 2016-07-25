@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="FWlone.Ru"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="93.0dp"
+        android:layout_marginRight="103.0dp" />
+    <Button
+        android:text="Расписание"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bRasp"
+        android:layout_marginTop="87.0dp"
+        android:layout_marginBottom="13.5dp" />
+    <Button
+        android:text="Список аниме"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BListView"
+        android:layout_marginTop="35.5dp" />
+</RelativeLayout>
