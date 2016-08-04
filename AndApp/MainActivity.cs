@@ -31,7 +31,8 @@ namespace AndApp
             {
                 StartActivity(new Intent(this, typeof(ListAnimeView)));
             };
-            btn2.Click += delegate {
+            btn2.Click += delegate
+            {
                 StartActivity(new Intent(this, typeof(Raspisanie)));
             };
         }

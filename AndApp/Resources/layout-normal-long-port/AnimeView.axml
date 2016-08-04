@@ -15,9 +15,10 @@
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
                 android:layout_width="match_parent"
-                android:layout_height="41.0dp"
+                android:layout_height="254.7dp"
                 android:id="@+id/imageView1"
-                android:layout_below="@id/imageView1" />
+                android:layout_below="@id/imageView1"
+                android:layout_marginBottom="0.0dp" />
             <TextView
                 android:text="Имя: "
                 android:layout_width="wrap_content"
@@ -48,6 +49,47 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textYear"
                 android:id="@+id/textOpis" />
+            <TextView
+                android:text="Тип: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textOpis"
+                android:id="@+id/textTip" />
+            <TextView
+                android:text="Жанр: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTip"
+                android:id="@+id/textGenre" />
+            <TextView
+                android:text="Скриншоты: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textGenre"
+                android:id="@+id/textView1" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:id="@+id/imageView2" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:id="@+id/imageView3" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView3"
+                android:id="@+id/imageView4" />
+            <VideoView
+                android:layout_width="353.0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView4"
+                android:id="@+id/videoView1" />
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

@@ -30,6 +30,28 @@ namespace BissnesLogic
                 return null;
             }
         }
+        public List<Classes.AnimeView> ConvertAnimeView(string content)
+        {
+            Classes.AnimeView AnimList = new Classes.AnimeView();
+            List<Classes.AnimeView> temp = new List<Classes.AnimeView>();
+            try {
+                JToken jtoken = JToken.Parse(content);
+                if (Convert.ToUInt32(jtoken["error"]) == 0)
+                {
+                    AnimList = jtoken["anime"].ToObject<Classes.AnimeView>();
+                    temp.Add(AnimList);
+                    return temp;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
         public List<Classes.Raspisanie> ConvertAnimeRaspisanie(string content)
         {
             List<Classes.Raspisanie> AnimList = new List<Classes.Raspisanie>();
@@ -54,13 +76,19 @@ namespace BissnesLogic
                HttpWebRequest req;
                HttpWebResponse resp;
                StreamReader sr;
-               req = (HttpWebRequest)HttpWebRequest.Create(string.Format(url));
-               resp = (HttpWebResponse)req.GetResponse();
-               sr = new StreamReader(resp.GetResponseStream(), Encoding.GetEncoding("utf-8"));
-               content = sr.ReadToEnd();
-               sr.Close();
-               resp.Close();
-            return content;
+            try {
+                req = (HttpWebRequest)HttpWebRequest.Create(string.Format(url));
+                resp = (HttpWebResponse)req.GetResponse();
+                sr = new StreamReader(resp.GetResponseStream(), Encoding.GetEncoding("utf-8"));
+                content = sr.ReadToEnd();
+                sr.Close();
+                resp.Close();
+                return content;
+            }
+            catch
+            {
+                return null;
+            }
         }
         
 
